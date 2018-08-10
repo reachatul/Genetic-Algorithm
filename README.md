@@ -29,9 +29,9 @@ Their problem was they were not able to cater their clients in time. Sometimes t
 
 Vehicle Routing Problems belong to a class of problems collectively known as Travelling Salesman Problem which itself is an NP-Hard problem for even an instance of 20 nodes, the time complexity of these problems  are O(n!).  This makes it extremely difficult to solve, we will not include the resource constraint brought by time windows and modelling for multiple vehicles with sometimes variable demands.
 
-Thankfully there is a lot of research that has been carried along in this area and many people have made valuable contribution for this problem. One of whom is Solomon who has generated the test instance for the problem and these test instances are used for benchmarking the problems.
+Thankfully there is a lot of research that has been carried along in this area and many people have made valuable contribution for this problem. One of whom is Solomon who has generated the test instance for the problem and these test instances are used for benchmarking the problems. The benchmark data are of three types: Randomly selected data points as customer locations, clustered data points as the customer locations and a mix of randomly selected and clustered data points for the customer locations.
 
-The benchmark data are of three types: Randomly selected data points as customer locations, clustered data points as the customer locations and a mix of randomly selected and clustered data points for the customer locations.
+Solomon's instances are only applicable for problems with 100 customers, and when it comes to problems with more than 100 customers (which is our case, 300) there are other benchmark instances provided by Gehrig and Homberger. I have included the Gehrig and Homberger instances 400 customers in the VRPTW data. The VRPTW code is inspired by iRB-Lab's VRPTW-GA and I believe I should give the credit where it is due.
 
 ## How to solve it?
 
