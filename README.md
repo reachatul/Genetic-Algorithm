@@ -298,7 +298,10 @@ Here is an example of a route for 100 customer problem.
 [22, 5, 45, 40, 53, 66, 56, 61, 29, 2, 100, 25, 32, 34, 62, 37, 77, 35, 97, 43, 80, 46, 57, 98, 50, 55, 3, 9, 12, 33, 65, 81, 39, 86, 73, 96, 76, 67, 78, 71, 59, 87, 31, 51, 4, 28, 79, 1, 60, 54, 64, 44, 92, 42, 85, 74, 7, 63, 26, 41, 19, 69, 99, 70, 75, 93, 52, 90, 14, 72, 38, 10, 58, 17, 68, 18, 47, 13, 6, 20, 89, 82, 23, 11, 84, 27, 8, 30, 16, 88, 95, 49,15, 48, 21, 91, 24, 36, 83, 94]
 ```
 
-VRPTW solution output for the Gehrig and Homerger instance of clustered customers:
+VRPTW solution output for the Gehrig and Homerger instance of clustered customers.
+Here is the link for the page to download the customer instances and the detailed information of the solutions.
+[Gehring and Homberger, 400 customer instances](https://www.sintef.no/projectweb/top/vrptw/homberger-benchmark/400-customers/)
+
 ```python
 Start of evolution
 -- Generation 0 --
