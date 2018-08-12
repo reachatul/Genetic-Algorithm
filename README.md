@@ -19,19 +19,22 @@
 
 ## Problem Description
 
-A potential client once approached my organization for with a problem their organization was facing. Their organization&#39;s business model was producing and distributing a particular type of resource to different businesses across a particular geography. The client had around 100 trucks and 300 customers around the country which they cater their resource in different time intervals. Most of their clients require the resources to be delivered in a particular time window. This time window was fixed more often than not.
+A potential client once approached my organization with a problem their organization was facing. Their organization&#39;s business model was producing and distributing a particular type of resource to different businesses across a particular geography. The client had around 50 trucks and 300 customers around the country which they cater their resource every single day. Most of their clients require the resources to be delivered in a particular time window. This time window was fixed more often than not.
 
-Their problem was they were not able to cater their clients in time. Sometimes the waiting time for the vehicles was too high and sometimes they would be late thus missing the time window. Thus having resources and enough vehicles to distribute them, the client was not able to make important operational decision for a more efficient performance.
+Their problem was they were not able to cater 'their' customers in time. Sometimes the waiting time for the vehicles was too high and sometimes they would be late thus missing the time window, either they would have to pay the delay penalty or they would not be allowed to deliver at all forcing them to either skip that customer or wait until the next time window. Thus having resources and enough vehicles to distribute them, the client was not able to make important operational decision. The VRPTWs are one of the hardest problems to solve, specially when the number of customers go beyond 50 or so. This time  it was 300.
+(Another important mention is that the organization strictly followed the driving time constraints of the drivers, this was somewhat similar to the US's Department of Transport Rules imposed on long haul and short haul truck drivers.  This made it even more difficult for the problem to be solved using classical optimization techniques. We had to research to find a more plausible, smart and efficient and low cost solution to deploy to serve our clients).
+
 
 ## Problem Complexity:
 
-  The VRPTW Vehicle Routing Problem with Time windows is one of the most extensively studied and one which has the most applications in real life scenario.
+  The VRPTW or Vehicle Routing Problem with Time windows is one of the most extensively studied and one which has the most applications in real life scenario, that does not make it any less easier to solve the problem itself, it just means that the problem is a pain the place where it should not be.
 
-Vehicle Routing Problems belong to a class of problems collectively known as Travelling Salesman Problem which itself is an NP-Hard problem for even an instance of 20 nodes, the time complexity of these problems  are O(n!).  This makes it extremely difficult to solve, we will not include the resource constraint brought by time windows and modelling for multiple vehicles with sometimes variable demands.
+Vehicle Routing Problems belong to a class of problems collectively known as Travelling Salesman Problem which itself is an NP-Hard problem for even an instance of 20 nodes, the time complexity of these problems  are O(n!). This makes it extremely difficult to solve, we will not include the resource constraint brought by time windows and modelling for multiple vehicles with sometimes variable demands.
 
-Thankfully there is a lot of research that has been carried along in this area and many people have made valuable contribution for this problem. One of whom is Solomon who has generated the test instance for the problem and these test instances are used for benchmarking the problems. The benchmark data are of three types: Randomly selected data points as customer locations, clustered data points as the customer locations and a mix of randomly selected and clustered data points for the customer locations.
+Thankfully there is a lot of research that has been carried along in this area and many people have made valuable contribution for this problem. One of whom is Solomon who has generated the test instance for the problem and these test instances are used for benchmarking the problems. 
+The benchmark data are of three types: Randomly selected data points as customer locations, clustered data points as the customer locations and a mix of randomly selected and clustered data points for the customer locations.
 
-Solomon's instances are only applicable for problems with 100 customers, and when it comes to problems with more than 100 customers (which is our case, 300) there are other benchmark instances provided by Gehrig and Homberger. I have included the Gehrig and Homberger instances 400 customers in the VRPTW data. The VRPTW code is inspired by iRB-Lab's VRPTW-GA and I believe I should give the credit where it is due.
+Solomon's instances are only applicable for problems with 100 customers, and when it comes to problems with more than 100 customers (which is our case, 300) there are other benchmark instances provided by Gehrig and Homberger. I have included the Gehrig and Homberger instances 400 customers in the VRPTW data. The VRPTW code is inspired by iRB-Lab's and pauliwalli's VRPTW-GA  and I believe I should give the credit where it is due.
 
 ## How to solve it?
 
@@ -44,7 +47,8 @@ The solution should have the following features:
 3. The solution should not take more time than we have.
 
 The link for sintef website where you can find the data and different solutions and bibliography related to this problem has been attached below:
-
+[Click here to see the VRPTW's sintef page](https://sintef.no/projectweb/top/vrptw/)
+That is when we decided to solve the VRPTW problem using Genetic Algorithm. See sintef's website for the reference, there are multiple Evolutionary Algorithms deployed to solve VRPTW's for Gehrig and Homberger's benchmark instances
 
 
 # 2. The Biology behind Genetic Algorithm:
