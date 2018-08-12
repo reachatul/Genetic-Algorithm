@@ -75,8 +75,8 @@ This important feature along with others, give characteristics to complex organi
 4. Crossover
 5. Mutation
 
-1. Encoding:
+I. Encoding:
 Encoding refers to the structure of the DNA in consideration, the encoding of DNA's makes different species so unique and specific. Of course when it all began the encoding was such that only single cellular organisms could  be replicated, but as time passed, there were multi-cellular organisms, the cambrian explosion, the release of oxygen in air, the evolution of ocean bourne animals to terretrial animal, then mammals, dinosaurs, apes, and human beings and then dogs.
 
-2. Fitness Function:
+II. Fitness Function:
 Fitness function refers to the quantitative assesment imposed by nature or by other living organisms(mostly humans) that affect the evolutionary process of an individual species. The fitness function makes no sense until and unless we talk more about the selection process.
