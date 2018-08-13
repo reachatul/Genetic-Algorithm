@@ -35,8 +35,7 @@ O<sub>i</sub> is the i<sup>th</sup> customer that needs to be catered, and e<sub
 
 ## Problem Complexity:
 
-  The VRPTW or Vehicle Routing Problem with Time windows is one of the most extensively studied and one which has the most applications in real life scenario, that does not make it any less easier to solve the problem itself, it just means that the problem is a pain in the place where it should not be.
-
+  The VRPTW or Vehicle Routing Problem with Time windows is one of the most extensively studied and one which has the most applications in real life scenario, that does not make it any less easier to solve the problem itself.
 Vehicle Routing Problems belong to a class of problems collectively known as Traveling Salesman Problem which itself is an NP-Hard problem for even an instance of 20 nodes, the time complexity of these problems  are O(n!). This makes it extremely difficult to solve, we will not include the resource constraint brought by time windows and modeling for multiple vehicles with sometimes variable demands.
 
 ![](data/images/r_1129490_vyaNv.jpg)
