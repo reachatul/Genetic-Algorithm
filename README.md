@@ -66,7 +66,7 @@ Of-course, GA is not the  only way we could solve it, but given the resources an
 
 ![](data/images/VRP_Solutions.PNG)
 
-## 2. The Biology behind Genetic Algorithm:
+## The Biology behind Genetic Algorithm:
 
 1. 1.Thought Experiment:
 
